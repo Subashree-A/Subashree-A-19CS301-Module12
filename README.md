@@ -155,3 +155,40 @@ for i in range(len(queue)):
 ![image](https://github.com/user-attachments/assets/3d2716d9-678d-483f-a35e-67ec4f55d685)
 
 ### Result: Thus, the given program is implemented and executed successfully .
+# Ex No 12.5:SEB-Queue
+# README
+
+### Aim:
+To write a Python program to implement stack operations using `LifoQueue`, with floating-point input and a fixed maximum stack size.
+
+### Algorithm:
+
+**STEP 1:** Start.  
+**STEP 2:** Import `LifoQueue` from the `queue` module.  
+**STEP 3:** Read an integer `n` as the number of elements to push.  
+**STEP 4:** Create a stack object with `maxsize = 3`.  
+**STEP 5:** For each iteration from `0` to `n-1`:  
+- Read a float input and push it onto the stack using `put()`.  
+**STEP 6:** Print the result of `stack.full()` to check whether the stack is full.  
+**STEP 7:** For each iteration from `0` to `n-1`, use `get()` to pop and print elements from the stack.  
+**STEP 8:** Stop.
+
+### Program:
+```python
+from queue import LifoQueue
+
+n = int(input())
+stack = LifoQueue(maxsize=3)
+
+for i in range(n):
+    stack.put(float(input()))
+
+print(stack.full())
+
+for i in range(n):
+    print(stack.get())
+```
+### Output:
+![image](https://github.com/user-attachments/assets/7955c5cc-294b-44c3-817a-15a7c70688f3)
+### Result:
+Thus the code was executed Successfully.
